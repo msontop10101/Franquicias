@@ -1,0 +1,71 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.background-image {
+  min-height: 100vh;
+  padding-top: 2vh;
+  padding-inline: 2rem;
+}
+
+.cust-dis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: .4rem;
+}
+
+.cust-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.cust-header>div:first-child {
+  display: flex;
+}
+
+.cust-footer {
+  width: 60%;
+  margin-inline: auto;
+}
+/*
+@media (width < 1000px) {
+    .cust-header {
+      display: block;
+    }
+  
+    .cust-header>div:first-child {
+      display: none;
+    }
+
+    .cust-dis {
+      display: block;
+    }
+
+    .cust-dis > div {
+      margin-block: .5rem;
+    }
+  
+    .cust-footer {
+      width: 100%;
+    }
+}*/
